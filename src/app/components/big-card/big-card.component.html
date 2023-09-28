@@ -1,15 +1,24 @@
 <div class="container__big-card">
-  <div class="big-card__img">
-    <img src=" {{ cardImg }} " alt="image"   height="200px">
+  <div class="container__big-card-content">
+
+    <div class="big-card__img">
+      <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/AD72115B9CDAE873B2234BD0908CEF7B45A2D9AD9C66C699239B46E582F70A8B/scale?width=1200&aspectRatio=1.78&format=jpeg">
+    </div>
+
+    <div class="big-card__title">
+      <h1><a [routerLink]="['content', Id]">
+        {{cardTitle}}
+      </a> </h1>
+    </div>
+
+    <div class="big-card__description">
+      <p>
+        <a [routerLink]="['content', Id]">
+          {{ cardDescription }}
+        </a>
+      </p>
+    </div>
+
   </div>
-  <div class="big-card__title">
-    <h1><a href="*">
-      {{ cardTitle }}
-    </a> </h1>
-  </div>
-  <div class="big-card__description">
-    <p>
-      {{ cardDescription }}
-    </p>
-  </div>
+
 </div>
